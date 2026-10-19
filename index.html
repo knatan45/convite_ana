@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11172b">
+  <meta name="description" content="Edição especial em quadrinhos: Project A.L. — uma missão multiversal para convidar Ana Lívia para sair.">
+  <title>PROJECT A.L. — Operação: Um Encontro</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Project A.L."><span class="brand-mark">A.L.</span><span>PROJECT <b>A.L.</b></span></a>
+    <div class="top-actions"><span class="status"><i></i> EDIÇÃO ESPECIAL · 001</span><button class="sound-toggle" type="button" aria-pressed="false" title="Ativar ou desativar som ambiente">SOM <span>OFF</span></button></div>
+  </header>
+  <main id="app" aria-live="polite">
+    <section class="scene scene-intro active" id="intro" aria-labelledby="intro-title">
+      <div class="boot-panel panel">
+        <div class="cover-sticker">EDIÇÃO<br>ESPECIAL<br><b>01</b></div>
+        <div class="eyebrow"><span class="pulse"></span> S.H.I.E.L.D. // TERMINAL 07</div>
+        <div class="reactor" id="reactor" role="button" tabindex="0" aria-label="Reator Arc. Clique cinco vezes para desbloquear o protocolo Stark"><span class="reactor-core"></span><span class="reactor-ring"></span></div>
+        <div class="boot-lines" id="boot-lines">
+          <p>SISTEMA INICIALIZANDO<span>...</span></p><p>ABRINDO ARQUIVO TERRA-616<span>...</span></p><p>ESTABELECENDO CONEXÃO COM O MULTIVERSO<span>...</span></p><p>IDENTIDADE DETECTADA: ANA LÍVIA</p><p>ACESSO AUTORIZADO.</p>
+        </div>
+        <div class="progress-track"><span id="progress"></span></div>
+        <span class="micro">TRANSMISSÃO CRIPTOGRAFADA · BRASIL</span>
+      </div>
+      <div class="intro-reveal" id="intro-reveal">
+        <div class="eyebrow">ALERTA DE NOVA YORK · TRANSMISSÃO RECEBIDA</div>
+        <h1 id="intro-title">ANA LÍVIA,<br><em>VOCÊ FOI CONVOCADA.</em></h1>
+        <p>Uma transmissão confidencial acaba de chegar. O J.A.R.V.I.S. tentou prever o final, mas até ele ficou curioso. E, desta vez, nem os Vingadores sabem exatamente o que vai acontecer.</p>
+        <button class="button button-primary" data-go="briefing">Descobrir a missão <span>↗</span></button>
+      </div>
+      <button class="skip-intro" id="skip-intro">Pular inicialização <span>→</span></button>
+    </section>
+
+    <section class="scene" id="briefing" aria-labelledby="briefing-title">
+      <div class="section-head"><div class="eyebrow">01 / BRIEFING DE OPERAÇÃO</div><div class="mission-progress"><span>MISSÃO</span><i><b style="--progress:20%"></b></i><span>01—05</span></div></div>
+      <div class="briefing-grid">
+        <div class="copy-column"><h2 id="briefing-title">Uma missão<br><em>fora do comum.</em></h2><p class="lead">Depois de cruzar linhas do tempo, consultar o multiverso e descartar até um plano do Doutor Estranho, encontramos uma missão que não se faz em equipe de uma pessoa só.</p><p>Você é a pessoa que eu gostaria de convidar. (O Tony Stark sugeriu um holograma. Eu fiz uma página inteira.)</p><button class="button button-primary" data-go="portals">Acessar os arquivos <span>↗</span></button></div>
+        <div class="dossier panel"><div class="panel-top"><span>INTEL // AVENGERS INITIATIVE</span><span class="redacted">CONFIDENCIAL</span></div><div class="dossier-lines">
+          <div><small>AGENTE</small><strong>ANA LÍVIA</strong></div><div><small>OPERAÇÃO</small><strong>ENCONTRO</strong></div><div><small>NÍVEL DE SIGILO</small><strong>CONFIDENCIAL</strong></div><div><small>RESPONSÁVEL PELA MISSÃO</small><strong>KAUAN</strong></div><div><small>RISCO ESTIMADO</small><strong class="cyan">SORRISOS ESPONTÂNEOS</strong></div><div><small>RECOMPENSA POTENCIAL</small><strong>UMA ÓTIMA HISTÓRIA PARA CONTAR.</strong></div>
+        </div><span class="stamp">ACESSO<br>CONCEDIDO</span><div class="scanline"></div></div>
+      </div>
+    </section>
+
+    <section class="scene" id="portals" aria-labelledby="portals-title">
+      <div class="section-head"><div class="eyebrow">02 / NAVEGAÇÃO MULTIVERSAL</div><div class="mission-progress"><span>MISSÃO</span><i><b style="--progress:40%"></b></i><span>02—05</span></div></div>
+      <div class="center-heading"><span class="caption-tag">GUIA RÁPIDO DO MULTIVERSO</span><h2 id="portals-title">Quatro realidades.<br><em>Uma boa possibilidade.</em></h2><p>De Manhattan a Kamar-Taj: passeie por quatro cantos do universo Marvel e veja o que cada equipe teria a dizer.</p></div>
+      <div class="portal-grid">
+        <button class="portal-card spider" data-portal="spider"><span class="portal-art web-art" aria-hidden="true"><i></i><b class="art-glyph">✦</b></span><span class="portal-index">01 / MANHATTAN · TERRA-616</span><strong>O amigão da vizinhança</strong><span class="portal-hint">ABRIR PORTAL ↗</span><span class="portal-message"></span></button>
+        <button class="portal-card stark" data-portal="stark"><span class="portal-art stark-art" aria-hidden="true"><i></i><b class="art-glyph">A</b></span><span class="portal-index">02 / STARK TOWER</span><strong>Protocolo Stark</strong><span class="portal-hint">ABRIR PORTAL ↗</span><span class="portal-message"></span></button>
+        <button class="portal-card strange" data-portal="strange"><span class="portal-art strange-art" aria-hidden="true"><i></i><b id="mystic-symbol">✳</b></span><span class="portal-index">03 / KAMAR-TAJ</span><strong>Portal místico</strong><span class="portal-hint">ABRIR PORTAL ↗</span><span class="portal-message"></span></button>
+        <button class="portal-card avengers" data-portal="avengers"><span class="portal-art avengers-art" aria-hidden="true"><i></i><b class="art-glyph">A</b></span><span class="portal-index">04 / INICIATIVA VINGADORES</span><strong>Heróis, avante!</strong><span class="portal-hint">ABRIR PORTAL ↗</span><span class="portal-message"></span></button>
+      </div>
+      <div class="portal-footer"><p id="portal-nudge">Abra os quatro portais para liberar o próximo arquivo.</p><button class="button button-primary" data-go="archive" id="portal-next" disabled>Seguir para o arquivo <span>↗</span></button></div>
+      <button class="artifact" id="artifact" aria-label="Artefato cósmico secreto" title="Um pequeno artefato cósmico">◆</button>
+    </section>
+
+    <section class="scene" id="archive" aria-labelledby="archive-title">
+      <div class="section-head"><div class="eyebrow">03 / ARQUIVO ULTRASSECRETO</div><div class="mission-progress"><span>MISSÃO</span><i><b style="--progress:60%"></b></i><span>03—05</span></div></div>
+      <div class="archive-grid"><div class="archive-card panel"><div class="panel-top"><span>SHIELD // PESSOAL</span><span class="redacted">A.L.</span></div><h2 id="archive-title">ARQUIVO<br><em>CONFIDENCIAL: A.L.</em></h2><div class="archive-data"><div><small>NOME</small><b>ANA LÍVIA</b></div><div><small>CODINOME</small><b>A ESCOLHIDA PARA ESTA MISSÃO</b></div><div><small>MISSÃO</small><b>ACEITAR UM CONVITE ESPECIAL</b></div><div><small>PARCEIRO DE MISSÃO</small><b>KAUAN</b></div><div><small>EQUIPAMENTO OBRIGATÓRIO</small><b>DISPOSIÇÃO PARA CONVERSAR, RIR E APROVEITAR O MOMENTO</b></div><div><small>REQUISITO ESPECIAL</small><b>NENHUMA EXPERIÊNCIA ANTERIOR COM SUPER-HERÓIS NECESSÁRIA.</b></div></div><div class="archive-foot">CLASSIFICAÇÃO: SÓ ENTRE NÓS <span>● ● ●</span></div></div>
+        <div class="personal-copy"><div class="eyebrow">UMA NOTA DO RESPONSÁVEL</div><h3>Brincadeiras<br>à parte.</h3><p>Ana Lívia, eu queria fazer esse convite de um jeito diferente, porque achei que você merecia algo que fugisse do comum.</p><p>Quero te conhecer melhor, conversar sem pressa, dar umas risadas e descobrir como seria passar um tempo contigo fora das telas.</p><p>Então pensei: por que não transformar um simples convite em uma pequena aventura?</p><button class="button button-primary" data-go="final">Revelar a missão final <span>↗</span></button></div></div>
+    </section>
+
+    <section class="scene final-scene" id="final" aria-labelledby="final-title">
+      <div class="portal-bloom" aria-hidden="true"></div><div class="section-head"><div class="eyebrow">04 / MISSÃO FINAL</div><div class="mission-progress"><span>MISSÃO</span><i><b style="--progress:100%"></b></i><span>04—05</span></div></div>
+      <div class="final-content"><div class="eyebrow">UMA PERGUNTA, SEM PRESSA.</div><h1 id="final-title">ANA LÍVIA,<br><em>ACEITA SAIR<br>COMIGO?</em></h1><div class="final-sub"><p>Sem precisar salvar o mundo, enfrentar o Thanos, reunir as Joias do Infinito nem atravessar o Bifrost.</p><p>Só eu, você, um lugar legal e a chance de criar uma história nossa. (Sem risco de estalar os dedos.)</p></div>
+        <div class="date-panel panel"><div class="date-item"><span class="date-icon">▦</span><span><small>DATA</small><b>A definir</b></span></div><div class="date-item"><span class="date-icon">◷</span><span><small>HORÁRIO</small><b>A definir</b></span></div><div class="date-item"><span class="date-icon">⌖</span><span><small>LOCAL</small><b>A combinar</b></span></div></div>
+        <p class="schedule-note">Quero que esse momento aconteça no melhor dia para você. Então, a data e o horário ficam a definir, para que a gente escolha juntos o que for melhor pra você. <span>♥</span></p>
+        <p class="final-promise">Você só precisa me dizer se topa. O resto a gente combina juntos, no dia e horário que forem melhores pra você.</p>
+        <div class="choice-actions"><button class="button button-yes" id="accept">Topo sim! <span>♥</span></button><button class="button button-outline" id="more">Quero saber mais <span>👀</span></button></div>
+        <p class="signoff">Eu cuido do convite. Você só precisa me dizer se topa. <span>♥</span></p>
+      </div>
+      <div class="subview" id="more-view" hidden><button class="back-link" data-back>← Voltar ao convite</button><div class="eyebrow">BRIEFING ADICIONAL // ACESSO LIVRE</div><h2>Justo, agente Ana Lívia.<br><em>Toda boa missão merece um briefing completo.</em></h2><ul><li>A ideia é sair, conversar e se divertir.</li><li>O lugar pode ser escolhido juntos.</li><li>A data e o horário ficam a definir, para que sejam os melhores para você.</li><li>Não existe pressão: o importante é que seja legal para os dois.</li></ul><button class="button button-primary" data-back>Voltar ao convite <span>↗</span></button></div>
+      <div class="subview success-view" id="success-view" hidden><div class="success-orbit">♥</div><div class="eyebrow">TRANSMISSÃO LOCAL // CONFIRMAÇÃO</div><h2>MISSÃO<br><em>ACEITA!</em> <span>♥</span></h2><p>Os Vingadores foram notificados, o multiverso está em paz e o Kauan provavelmente está sorrindo pra tela agora.</p><p>Agora falta a melhor parte: combinarmos o dia, o horário e o lugar.</p><div class="success-note">Escolha registrada somente nesta tela. Nenhuma mensagem foi enviada.</div></div>
+    </section>
+  </main>
+  <footer><span>PROJECT A.L. · OPERAÇÃO: UM ENCONTRO</span><span>UMA HOMENAGEM DE FÃ · NÃO OFICIAL · NÃO AFILIADO À MARVEL / DISNEY</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-scrim" id="modal" hidden><div class="modal panel" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Fechar">×</button><div class="eyebrow" id="modal-kicker">ARQUIVO DESBLOQUEADO</div><h2 id="modal-title"></h2><p id="modal-text"></p><button class="button button-primary" id="modal-ok">Entendido <span>↗</span></button></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
